@@ -1,0 +1,18 @@
+Options -Indexes
+DirectoryIndex index.html
+Require all granted
+<IfModule mod_headers.c>
+ Header always set X-Content-Type-Options "nosniff"
+ Header always set X-Frame-Options "DENY"
+ Header always set Referrer-Policy "no-referrer"
+ Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+ Header always set Cache-Control "no-cache"
+</IfModule>
+<Files "api.php">
+ <IfModule mod_headers.c>
+  Header always set Cache-Control "no-store, private"
+ </IfModule>
+</Files>
+<FilesMatch "(^\.|\.(sqlite|sqlite3|db|bak|ini|log|md|json|zip|sql|sh|ps1|vbs)$)">
+ Require all denied
+</FilesMatch>

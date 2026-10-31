@@ -1,0 +1,9 @@
+{
+  "name": "family-plan",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/smoke.mjs",
+    "check": "node --check public/app.js"
+  }
+}

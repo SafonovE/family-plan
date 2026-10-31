@@ -1,0 +1,2 @@
+# This parent directory must not be used as the site's document root.
+Require all denied

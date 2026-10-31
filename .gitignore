@@ -1,0 +1,13 @@
+/.runtime/
+/private/*
+!/private/.gitkeep
+!/private/.htaccess
+!/private/config.example.php
+/checks/
+/release/
+/node_modules/
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.log
